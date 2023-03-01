@@ -1,35 +1,132 @@
-.container {}
+.container {
+    max-width: 1200px;
+    width: 100%;
+    background-color: lightblue;
+    margin-inline: auto;
 
-.header__wrapper {}
+}
 
-.logo {}
+.header__wrapper {
+    background-color: lightgreen;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+
+}
+
+.logo {
+    width: 94px;
+    height: 94px;
+    background-color: darkblue;
+    display: inline-block;
+    margin: 10px;
+
+}
 
 .logo .logo__img {}
 
-.menu {}
+.menu {
+    background-color: lightgoldenrodyellow;
 
-.menu .menu__item {}
+}
+
+.menu .menu__item {
+    padding: 10px;
+    display: inline-block;
+    margin-inline: 10px;
+    background-color: red;
+}
 
 .menu .menu__item.menu__item--active {}
 
-.main__wrapper {}
+.main__wrapper {
+    background-color: lightsalmon;
+    display: flex;
+    flex-direction: column;
+}
 
-.mainArticle {}
 
-.mainArticle .mainArticle__hdl {}
+    @media screen and (min-width: 650px) {
+        .main__wrapper {
+            flex-direction: row;
+        }
+    }
+
+
+.mainArticle {
+    padding: 10px;
+    background-color: darkgreen;
+    width: 100%;
+
+}
+
+.mainArticle .mainArticle__hdl {
+
+}
 .mainArticle .mainArticle__text {}
-.mainArticle .mainArticle__related {}
+.mainArticle .mainArticle__related {
+    padding: 10px;
+    background-color: blue;
 
-.related {}
-.related .related__item {}
+}
 
-.aside {}
-.aside .aside__item {}
+.related {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    background-color: darkorange;
+    max-width: 400px;
+    margin-inline: auto;
+}
+.related .related__item {
+    width: 100px;
+    height: 100px;
+    background-color: white;
 
-.footer__wrapper {}
+
+}
+
+.aside {
+    background-color: gold;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+    @media screen and (min-width: 650px) {
+        .aside {
+            flex-direction: column;
+
+        }
+    }
+
+
+.aside .aside__item {
+    background-color: silver;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+
+
+}
+
+.footer__wrapper {
+    background-color: lightpink;
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+
+}
 
 .secondaryMenu {}
 .secondaryMenu .secondaryMenu__item {}
 
-.copyright {}
+.copyright {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+
+}
 
